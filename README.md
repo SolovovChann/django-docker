@@ -2,6 +2,8 @@
 
 ## Installation
 
+### Local
+
 Create python virtual environment
 
     python -m venv .venv
@@ -14,7 +16,15 @@ Install python dependencies
 
     pip install -m requirements.txt
 
+Navigate into the core directory
+
+    cd core
+
 Create and configure `.env` environment file from example
 
-    cp core/.env_example core/.env
-    nano core/.env
+    cp .env_example .env
+    nano .env
+
+Launch `run.sh` script
+
+    sh run.sh
