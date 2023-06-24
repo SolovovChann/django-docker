@@ -120,6 +120,8 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = env.path('STATIC_ROOT')
 
+MEDIA_ROOT = env.path('MEDIA_ROOT')
+
 # Default primary key field type
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
