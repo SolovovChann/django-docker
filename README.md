@@ -4,6 +4,8 @@ This app is a simple django app template to speed up development and deployment.
 
 ## Usage
 
+The application can be used in both modes: for local development and for release deployment in docker.
+
 ## Installation
 
 ### Local
