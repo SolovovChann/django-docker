@@ -25,13 +25,13 @@ Create and configure `.env` environment file from example
     cp .env_example .env
     nano .env
 
-Launch `run.sh` script
-
-    sh run.sh
-
 Compile localization files
 
     python manage.py compilemessages -l <languages>
+
+Launch `run.sh` script
+
+    sh run.sh
 
 ### Docker
 
