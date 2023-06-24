@@ -1,4 +1,8 @@
-# django-template
+# Django app template
+
+This app is a simple django app template to speed up development and deployment. The application out of the box can configure django from a dotenv file, has a `Dockerfile` script that automatically builds the docker image of the application, and a configured `run.sh` script, which is the entry point for docker compose.
+
+## Usage
 
 ## Installation
 
