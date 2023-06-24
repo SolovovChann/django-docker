@@ -15,6 +15,12 @@ echo "
 >> Migrations applied successfully
 "
 
+# ensure that MEDIA_ROOT directory exists
+if [ ! -d $MEDIA_ROOT ]; then
+    echo ">> Trying to create MEDIA_ROOT directory"
+    mkdir -p $MEDIA_ROOT
+fi
+
 # collect static files
 python manage.py collectstatic --noinput
 
