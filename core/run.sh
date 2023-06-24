@@ -15,5 +15,12 @@ echo "
 >> Migrations applied successfully
 "
 
+# collect static files
+python manage.py collectstatic --noinput
+
+echo "
+>> Static files collected successfully
+"
+
 # launch server
 python manage.py runserver $1
