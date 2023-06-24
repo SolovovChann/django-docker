@@ -29,6 +29,10 @@ Launch `run.sh` script
 
     sh run.sh
 
+Compile localization files
+
+    python manage.py compilemessages -l <languages>
+
 ### Docker
 
 In your `docker-compose.yml` script add backend service code
