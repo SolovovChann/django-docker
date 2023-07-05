@@ -18,7 +18,8 @@ Create and enable python virtual environment
 
 Update `pip` & `setuptools` modules
 
-    pip install -U pip setuptools
+    pip install -U pip setuptools             # linux
+    python -m pip install -U pip setuptools   # windows
 
 Install python dependencies
 
