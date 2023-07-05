@@ -1,16 +1,25 @@
-# django-template
+# Django app template
+
+This app is a simple django app template to speed up development and deployment. The application out of the box can configure django from a dotenv file, has a `Dockerfile` script that automatically builds the docker image of the application, and a configured `run.sh` script, which is the entry point for docker compose.
+
+## Usage
+
+The application can be used in both modes: for local development and for release deployment in docker.
 
 ## Installation
 
 ### Local
 
-Create python virtual environment
+Create and enable python virtual environment
 
     python -m venv .venv
+    .venv/scripts/activate      # windows
+    source .venv/bin/activate   # linux
 
 Update `pip` & `setuptools` modules
 
-    pip install -U pip setuptools
+    pip install -U pip setuptools             # linux
+    python -m pip install -U pip setuptools   # windows
 
 Install python dependencies
 
