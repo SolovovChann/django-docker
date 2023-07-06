@@ -42,6 +42,8 @@ Compile localization files
 
     python manage.py compilemessages -l <languages>
 
+If you do not have the gettext utility pre-installed, you can download the latest version from the official [GNU gettext website](https://www.gnu.org/software/gettext/#downloading).
+
 Launch `run.sh` script
 
     sh run.sh
