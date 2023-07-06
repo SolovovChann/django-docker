@@ -13,8 +13,8 @@ The application can be used in both modes: for local development and for release
 Create and enable python virtual environment
 
     python -m venv .venv
-    .venv/scripts/activate      # windows
     source .venv/bin/activate   # linux
+    .venv/scripts/activate      # windows
 
 Update `pip` & `setuptools` modules
 
