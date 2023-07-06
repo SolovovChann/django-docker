@@ -13,8 +13,8 @@ The application can be used in both modes: for local development and for release
 Create and enable python virtual environment
 
     python -m venv .venv
-    .venv/scripts/activate      # windows
     source .venv/bin/activate   # linux
+    .venv/scripts/activate      # windows
 
 Update `pip` & `setuptools` modules
 
@@ -34,9 +34,15 @@ Create and configure `.env` environment file from example
     cp .env_example .env
     nano .env
 
+To get django secret key use next command
+
+    python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+
 Compile localization files
 
     python manage.py compilemessages -l <languages>
+
+If you do not have the gettext utility pre-installed, you can download the latest version from the official [GNU gettext website](https://www.gnu.org/software/gettext/#downloading).
 
 Launch `run.sh` script
 
