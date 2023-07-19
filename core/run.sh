@@ -1,8 +1,12 @@
 #!/bin/sh
 
-# check django for issues
-python manage.py check --deploy --fail-level ERROR
-python manage.py test --noinput
+test_django_app() {
+    # check django for issues
+    python manage.py check --deploy --fail-level ERROR
+    python manage.py test --noinput
+}
+
+test_django_app
 
 echo "
 >> Django checks completed successfully
