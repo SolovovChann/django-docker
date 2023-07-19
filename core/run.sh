@@ -15,30 +15,21 @@ notify_user() {
 }
 
 test_django_app
-
-echo "
->> Django checks completed successfully
-"
+notify_user "Django checks completed successfully" "Django check failed"
 
 # migrate django
 python manage.py migrate --noinput
-
-echo "
->> Migrations applied successfully
-"
+notify_user "Migrations applied successfully" "Django migrations failed"
 
 # ensure that MEDIA_ROOT directory exists
 if [ ! -d $MEDIA_ROOT ]; then
-    echo ">> Trying to create MEDIA_ROOT directory"
     mkdir -p $MEDIA_ROOT
+    notify_user "Media dir created" "Dir creating failed"
 fi
 
 # collect static files
 python manage.py collectstatic --noinput
-
-echo "
->> Static files collected successfully
-"
+notify_user "Static files collected successfully" "Unable to collect static"
 
 # launch server
 python manage.py runserver $1
