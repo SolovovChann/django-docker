@@ -6,6 +6,14 @@ test_django_app() {
     python manage.py test --noinput
 }
 
+notify_user() {
+    if [ "$?" -eq "0" ]; then
+        echo "✔️ " $1
+    else
+        echo "❌ " $2
+    fi
+}
+
 test_django_app
 
 echo "
