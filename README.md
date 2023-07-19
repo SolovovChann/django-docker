@@ -34,7 +34,7 @@ Create and configure `.env` environment file from example
     cp .env_example .env
     nano .env
 
-To get django secret key use next command
+To generate the secret key you can use [duckduckgo](https://duckduckgo.com/?q=password+50+strong&ia=answer) or paste the next command in terminal
 
     python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
 
