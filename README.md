@@ -4,7 +4,9 @@ This app is a simple django app template to speed up development and deployment.
 
 ## Usage
 
-The application can be used in both modes: for local development and for release deployment in docker.
+The application can be used in both modes: for local development and for release deployment in docker. 
+
+Note: The `.env` file contains the settings for **development and debugging**. In the docker compose settings file, you can overwrite them with data used for production (for example, using a production database and turning off debug mode).
 
 ## Installation
 
