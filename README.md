@@ -4,7 +4,7 @@ This app is a simple django app template to speed up development and deployment.
 
 ## Usage
 
-The application can be used in both modes: for local development and for release deployment in docker. 
+The application can be used in both modes: for local development and for release deployment in docker.
 
 Note: The `.env` file contains the settings for **development and debugging**. In the docker compose settings file, you can overwrite them with data used for production (for example, using a production database and turning off debug mode).
 
@@ -25,7 +25,7 @@ Update `pip` & `setuptools` modules
 
 Install python dependencies
 
-    pip install -m requirements.txt
+    pip install -r requirements.txt
 
 Navigate into the core directory
 
@@ -46,7 +46,7 @@ Compile localization files
 
 If you do not have the gettext utility pre-installed, you can download the latest version from the official [GNU gettext website](https://www.gnu.org/software/gettext/#downloading).
 
-Launch `run.sh` script
+Launch `run.sh` script (linux only)
 
     sh run.sh
 
