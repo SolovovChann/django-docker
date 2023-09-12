@@ -46,7 +46,7 @@ Compile localization files
 
 If you do not have the gettext utility pre-installed, you can download the latest version from the official [GNU gettext website](https://www.gnu.org/software/gettext/#downloading).
 
-Launch `run.sh` script
+Launch `run.sh` script (linux only)
 
     sh run.sh
 
