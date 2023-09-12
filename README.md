@@ -29,7 +29,7 @@ Install python dependencies
 
 Navigate into the core directory
 
-    cd core
+    cd app
 
 Create and configure `.env` environment file from example
 
